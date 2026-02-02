@@ -1,3 +1,19 @@
+# ------------------------------------------------------------
+# Clinical Research Data Management
+# Patient–Protocol Matching (Initial Screening)
+#
+# Purpose:
+# This script performs an initial matching between patients
+# and clinical research protocols using clinical specialty
+# as a preliminary filter. The output supports manual
+# eligibility assessment and does not replace clinical review.
+#
+# Notes:
+# - No sensitive or identifiable data are required
+# - Specialty is used as an initial filter, not an
+#   eligibility criterion
+# ------------------------------------------------------------
+
 rm(list = ls())
 gc()
 library(dplyr)
@@ -177,3 +193,4 @@ write.xlsx(
   file = "match_invertido_validacao.xlsx",
   overwrite = TRUE
 )
+
